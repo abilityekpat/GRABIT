@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.7/css/flag-icons.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
@@ -15,6 +16,12 @@
                            text_gray: '#777777',
                            green: '#5daf90',
                            hero_text: '#4b5966',
+                           box_one: '#fff6ec',
+                           box_two: '#e2fde2',
+                           box_three: '#ffeae9',
+                           box_four: '#fde1f5',
+                           box_five: '#ecf0ff',
+                           box_six: '#f9f9d9',
                        }
                    }
                }
@@ -167,10 +174,46 @@
                     <a href="">Shop Now</a>
                     <i data-feather="chevrons-right" class="w-[20px] h-[20px] text-white"></i>
                 </div>
-
             </div>
         </div>
     </section>
+    <section class="container mx-auto mt-20">
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5">
+            <div class="bg-box_one py-5 px-5 rounded-[5px]">
+                <div class="h-[140px]  bg-white rounded-[5px] flex flex-col justify-center items-center">
+                    <i data-feather="slack" class="w-[40px] h-[40px] text-green"></i>
+                    <h2 class="mt-2 font-semibold text-hero_text">Fruits</h2>
+                    <h3 class="text-[14px] font-light">320 Items</h3>
+                </div>
+            </div>
+            
+            <div class="bg-box_two py-5 px-5 rounded-[5px]">
+                <div class="h-[140px] bg-white rounded-[5px] flex flex-col justify-center items-center">
+                    <i data-feather="moon" class="w-[40px] h-[40px] text-green"></i>
+                    <h2 class="mt-2 font-semibold text-hero_text">Bakery</h2>
+                    <h3 class="text-[14px] font-light">65 Items</h3>
+                </div>
+            </div>
+            
+            <div class="h-[140px] bg-box_three rounded-[5px] flex flex-col justify-center items-center">
+                <i data-feather="feather" class="w-[40px] h-[40px] text-green"></i>
+                <h2 class="mt-2 font-semibold text-hero_text">Vegetables</h2>
+                <h3 class="text-[14px] font-light">548 Items</h3>
+            </div>
+            <div class="h-[140px] bg-box_four rounded-[5px] flex flex-col justify-center items-center">
+                <i data-feather="feather" class="w-[40px] h-[40px] text-green"></i>
+                <h2 class="mt-2 font-semibold text-hero_text">Dairy and Milk</h2>
+                <h3 class="text-[14px] font-light">548 Items</h3>
+            </div>
+            <div class="h-[140px] bg-box_five rounded-[5px] flex flex-col justify-center items-center">
+                <i data-feather="droplet" class="w-[40px] h-[40px] text-green"></i>
+                <h2 class="mt-2 font-semibold text-hero_text">Eggs</h2>
+                <h3 class="text-[14px] font-light">154 Items</h3>
+            </div>
+            
+        </div>
+    </section>
+   
     <script>
         feather.replace();
     </script>
